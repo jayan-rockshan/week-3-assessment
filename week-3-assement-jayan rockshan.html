@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+
+            background-color: rgb(1, 41, 41);
+        }
+        table, th, td {
+        border: 1px solid white;
+        border-collapse: collapse;
+        }
+        th, td {
+          padding : 15px;
+        }
+        th {
+        text-align:center;
+        }
+        
+        
+        #hello {
+            text-align: left;
+            color: brown;
+            font-size: xx-large;
+            font-style: italic;
+        }
+        #fan{
+            background-color: rgb(200, 255, 0);
+        }
+        #ela{
+            background-color: rgb(248, 180, 7);
+        }
+        #righthead{
+            background-color: white;
+        }
+        #right5{
+            background-color: white;
+        }
+        #contact{
+            font-size:x-large;
+            font-weight: 400 ;
+        }
+     
+    </style>
+</head>
+<body>
+    <table  style="width:50% ;">
+        <!--we can use caption tag to define table-->
+        <caption id="hello">New students application</caption><br>
+        <tr>
+            <!--left table head-->
+            <th id="ela" rowspan="7" colspan="2">
+                <div id="contact">Contact us</div><br>
+                <div>We would love to here from you</div>
+                <div><img src="Doc.png" alt="document" width="200" height="150"></div>
+            <!--we have to update click here as a link-->
+                <div>more information<p> <a href="document.html"> &#128073;click here</p> </div>
+            </th>
+            <!--right table head-->
+            <th id="righthead">
+                fill your data here &#128071;
+            </th>
+        </tr>
+        <!--table data we can see below-->
+        <!--form test attempt-->
+        <form action="/action_page.php">
+        
+        <tr>
+            <td id="right5"><label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="ex :Jayan"><br></td>
+        </tr>
+
+        <tr>
+            <td id="right5"><label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="ex :Rockshan"><br></td>
+        </tr>
+
+        <!--choosing type-->
+        <tr>
+            <td id="right5" >choose your age
+                <label for="zet">age</label>
+                <select id="age" name="age">
+                <option value="12">21</option>
+                <option value="13">22</option>
+                <option value="14">23</option>
+                <option value="15">24</option>
+                <option value="16">25</option></select><br>
+            </td>
+        </tr>
+        <!--choosing type finished-->
+        
+        <tr>
+            <td id="right5"><label for="fname">Email:</label><br>
+            <input type="email" id="jei" name="jei" value="ex :jeisonrockexx@gmail.com"><br></td>
+        </tr>
+
+        <tr>
+            <td id="right5"><label for="fname">password:</label><br>
+            <input type="password" id="jei" name="jei" value=""><br></td>
+        </tr>
+
+        <tr>
+            <td id="right5"><label for="fname"></label><br>
+            <input type="text" id="jei" name="jei" value="Type about you"><br><br>
+            <!--submit button-->
+            <input type="submit" style="background-color: rgb(5, 34, 199);" value="Submit"></td>
+        </tr>
+
+        <!--form ends here-->
+        </form>
+    </table>
+</body>
+</html>
